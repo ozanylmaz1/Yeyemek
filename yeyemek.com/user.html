@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="user.css">
+    <link rel="icon" href="icon.png" />
+    <title>
+        Yeyemek
+    </title>
+</head>
+<body>
+    <nav>
+        <a id="yeyemek" class="yeyemek" href="./index.html"></a>
+        <a class="tracking" id="tracking">Sipariş takip</a>
+        <a id="pp" class="profil" href="user.html"></a>
+    </nav>
+
+    <div id="user" class="user">
+        <div class="home">
+            <input id="nick" value="Kullanıcı"/>
+            <a id="pp" class="user-pp"></a>
+            <input id="mail" value="***@gmail.com" />
+            <input id="phones" value="+905*******55"/>
+        </div>
+
+        <div class="membership">
+            <h1>Üyelik Bilgilerim</h1>
+
+            <div class="info-area">
+                <div class="infostart">
+                    <div class="info-box">
+                        <label for="name">İSİM*</label>
+                        <div class="input-container">
+                            <input type="text" id="username" readonly value="">
+                            <a class="change-link" data-target="username">Değiştir</a>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <label for="dob">DOĞUM TARİHİ*</label>
+                        <div class="input-container">
+                            <input type="date" id="userdob" readonly value="00/00/0000">
+                            <a class="change-link" data-target="userdob">Değiştir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infoend">
+                    <div class="info-box">
+                        <label for="telefon">TELEFON NUMARASI*</label>
+                        <div class="input-container">
+                            <input type="tel" id="userphone" readonly value="+90">
+                            <a class="change-link" data-target="userphone">Değiştir</a>
+                        </div>
+                        <div>
+                            <p class="verification">
+                                <span class="verify-icon" aria-label="Doğrulama Gerekli">ℹ️</span> Telefon numaranızı doğrulayın
+                            </p>
+                        </div>
+                        <button class="delete-account-btn">Hesabı Sil</button>
+                    </div>
+
+                    <div class="info-box">
+                        <label for="email">E-POSTA ADRESİ*</label>
+                        <div class="input-container">
+                            <input type="email" id="useremail" readonly value="">
+                            <a class="change-link" data-target="useremail">Değiştir</a>
+                        </div>
+                        <div>
+                            <p class="confirmed">
+                                <span class="confirm-icon" aria-label="Onaylı">✔️</span> ONAYLI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="delivery-section">
+            <div class="delivery-address">
+                <p>Teslimat Adresim</p>
+                <div class="edit-icon" id="edit-icon">✏️</div>
+            </div>
+
+            <div class="address-card">
+                <span style="display:flex; flex-direction:row; gap:10px;">
+                    <input type="text" id="firstname" value="Adı" readonly />
+                    <input type="text" id="lastname" value="Soyadı" readonly />
+                </span>
+                <input type="text" id="addresstitle" value="Adres başlığı" readonly />
+                <input type="text" id="addressdetails" value="Mahalle Sokak KapıNo Kat Daire" readonly />
+                <input type="text" id="citydistrict" value="İlçe/İl" readonly />
+            </div>
+        </div>
+
+        <div class="but3">
+            <div class="new-card">
+                <p>Kartlarım</p>
+                <button class="yeni-card-btn">+ Yeni Kart Ekle</button>
+            </div>
+
+            <!-- Kartlar listesi -->
+            <div id="card-list"></div>
+
+            <!-- Kart ekleme formu -->
+            <div id="card-form-container" style="display: none;">
+                <h3>Yeni Kart Ekle</h3>
+                <form id="card-form">
+                    <label for="card-number">Kart Numarası:</label>
+                    <input type="text" id="card-number" maxlength="16" placeholder="Kart numarasını girin" required>
+                    <br>
+                    <label for="cvc">CVC:</label>
+                    <input type="text" id="cvc" maxlength="3" placeholder="CVC girin" required>
+                    <br>
+                    <label for="expiry-date">Son Kullanım Tarihi:</label>
+                    <input type="month" id="expiry-date" required>
+                    <br>
+                    <button type="submit">Kaydet</button>
+                    <button type="button" id="cancel-button" style="cursor:pointer;">İptal</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="but4">
+        <div class="Food-Order-container">
+            <p>Yemek Siparişlerim</p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <div class="siparis-card">
+                <div class="siparis-left">
+                    <img src=".png" alt="Firma Logosu" class="firma-logo">
+                    <div class="siparis-detay">
+                        <h5>Öncü Döner</h5>
+                        <p>01.01.2024 - 00:00 · 1 Ürün · <strong>0,00 TL</strong></p>
+                        <p class="siparis-durum"><span class="durum-icon">✔️</span> Teslim Edildi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="siparis-card">
+                <div class="siparis-left">
+                    <img src=".png" alt="Firma Logosu" class="firma-logo">
+                    <div class="siparis-detay">
+                        <h5>Öncü Döner</h5>
+                        <p>01.01.2024 - 00:00 · 1 Ürün · <strong>0,00 TL</strong></p>
+                        <p class="siparis-durum"><span class="durum-icon">✔️</span> Teslim Edildi</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="siparis-card">
+                <div class="siparis-left">
+                    <img src=".png" alt="Firma Logosu" class="firma-logo">
+                    <div class="siparis-detay">
+                        <h5>Öncü Döner</h5>
+                        <p>01.01.2024 - 00:00 · 1 Ürün · <strong>0,00 TL</strong></p>
+                        <p class="siparis-durum"><span class="durum-icon">✔️</span> Teslim Edildi</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="siparis-card">
+                <div class="siparis-left">
+                    <img src=".png" alt="Firma Logosu" class="firma-logo">
+                    <div class="siparis-detay">
+                        <h5>Öncü Döner</h5>
+                        <p>01.01.2024 - 00:00 · 1 Ürün · <strong>0,00 TL</strong></p>
+                        <p class="siparis-durum"><span class="durum-icon">✔️</span> Teslim Edildi</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="footer">
+        <div style="display: flex; margin: 40px 10em; flex-direction: row; justify-content: space-between;">
+            <div class="footerAddress">Adres:</div>
+            <div class="footerPhone">Telefon:</div>
+            <div class="footerMail">Eposta:</div>
+            <div class="footerMedia">Sosyal Medyalar:</div>
+        </div>
+        <div style="display: flex; margin: 4em 10em; justify-content: center;">
+            <span class="copy">&copy;2024 Yeyemek</span>
+        </div>
+    </div>
+
+    <script src="editicon.js"></script>
+    <script src="edit.js"></script>
+    <script src="bankcart.js"></script>
+</body>
+</html>

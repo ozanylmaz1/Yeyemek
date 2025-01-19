@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="location.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" href="icon.png" />
+    <title>Yeyemek</title>
+</head>
+<body>
+    <nav>
+        <a id="yeyemek" class="yeyemek" href="./index.html"></a>
+
+        <div class="search">
+            <input type="search" placeholder="Ara" class="search-bar">
+            <button class="ara"><strong>Ara</strong></button>
+        </div>
+        <div id="cart">
+            <div class="buy">
+                <span class="cart"></span>
+                <span id="cart-text" class="cart-text">Sepetim</span>
+                <span id="cart-money" class="cart-money">0,0TL</span>
+            </div>
+        </div>
+        <a id="pp" class="profil" href="user.html"></a>
+
+    </nav>
+
+    
+    <div class="header">
+        <a class="location" id="openModalBtn"><strong>Teslim adresi</strong></a>
+
+        <div id="locationModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModalBtn" class="close">&times;</span>
+                <div class="container">
+                    <input type="text" placeholder="Mahalle, Sokak, Cadde Ara" class="search-input">
+                    <div class="warning">
+                        <p>Haritadaki <strong>No Bilgisi</strong> Google tarafından sağlanmaktadır. <span class="error">Hatalı gösteriliyorsa</span>, sonraki adımda düzenleyebilirsiniz.</p>
+                    </div>
+                    <div class="map-container">
+                        <div class="map">
+                            <!-- Burada Google Maps API kullanılarak harita eklenecektir -->
+                            <div class="map-message">
+                                <p>Adresi belirlemek için pini sürükleyin ya da sağ alttaki "Mevcut Konumu Kullan" butonuna tıklayın.</p>
+                                <span class="close-btn">&times;</span>
+                            </div>
+                            <button class="current-location-btn">Mevcut Konumu Kullan</button>
+                        </div>
+                    </div>
+                    <button class="add-location-btn">İşaretlediğim Konumu Ekle</button>
+                </div>
+            </div>
+        </div>
+
+        <a class="tracking" id="tracking">Sipariş takip</a>
+    </div>
+
+    <div class="content">
+        <div class="campaigns">
+            <img src="logs/sale/camp.png" alt="Campaign 1">
+            <img src="logs/sale/camp.png" alt="Campaign 2">
+            <img src="logs/sale/camp.png" alt="Campaign 3">
+        </div>
+        <div class="menu-container">
+            <h1>Mutfaklar</h1>
+        </div>
+        <div class="menu">
+            <img id="doner" src="logs/menu/doner.png" />
+            <img id="pizza" src="logs/menu/pizza.png" />
+            <img id="burger" src="logs/menu/burger.png" />
+            <img id="cigkofte" src="logs/menu/cigkofte.png" />
+            <img id="fırın" src="logs/menu/firin.png" />
+            <img id="kebap" src="logs/menu/kebap.png" />
+            <img id="pide" src="logs/menu/pide.png" />
+            <img id="ev" src="logs/menu/ev.png" />
+        </div>
+    </div>
+    
+    <div class="restaurant">
+        <div class="restaurant-container">
+            <h1>Restoranlar</h1>
+        </div>
+
+        <main>
+
+            <section class="restaurant-grid">
+                <div class="restaurant-box">
+                    <img src="logs/resimler/restoran2.jpeg" alt="">
+                    <h2>Restoran 1</h2>
+                    <div class="info">
+                        <p>00-10 dk • Min. 10,00 TL</p>
+                        <span class="rating">★5,0</span>
+                    </div>
+                </div>
+
+                <div class="restaurant-box">
+                    <img src="logs/resimler/restoran1.jpeg" alt="">
+                    <h2>Restoran 2</h2>
+                    <div class="info">
+                        <p>00-10 dk • Min. 10,00 TL</p>
+                        <span class="rating">★5,0</span>
+                    </div>
+                </div>
+
+                <div class="restaurant-box">
+                    <img src="logs/resimler/images4 (2).jpeg" alt="">
+                    <h2>Restoran 3</h2>
+                    <div class="info">
+                        <p>00-10 dk • Min. 10,00 TL</p>
+                        <span class="rating">★5,0</span>
+                    </div>
+                </div>
+
+                <div class="restaurant-box special-box">
+                    <img src="logs/resimler/images4 (3).jpeg" alt="">
+                    <h2>Restoran 4</h2>
+                    <div class="info">
+                        <p>00-10 dk • Min. 10,00 TL</p>
+                        <span class="rating">★5,0</span>
+                    </div>
+                </div>
+
+                <div class="restaurant-box">
+                    <img src="logs/resimler/images4 (4).jpeg" alt="">
+                    <h2>Restoran 5</h2>
+                    <div class="info">
+                        <p>00-10 dk • Min. 10,00 TL</p>
+                        <span class="rating">★5,0</span>
+                    </div>
+                </div>
+
+                <div class="restaurant-box">
+                    <img src="logs/resimler/images4 (5).jpeg" alt="">
+                    <h2>Restoran 6</h2>
+                    <div class="info">
+                        <p>00-10 dk • Min. 10,00 TL</p>
+                        <span class="rating">★5,0</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="filter-container" style="float: right;">
+                <h2>Filtreler</h2>
+                <div class="filter-group">
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori">
+                        <option value="hepsi">Hepsi</option>
+                        <option value="et">Et Yemekleri</option>
+                        <option value="sebze">Sebze Yemekleri</option>
+                        <option value="tatli">Tatlılar</option>
+                    </select>
+                </div>
+
+
+                <div class="filter-group">
+                    <label for="fiyat">Fiyat:</label>
+                    <input type="range" id="fiyat" min="0" max="200" value="100" oninput="this.nextElementSibling.innerText = '₺' + this.value;">
+                    <div class="range-value">₺100</div>
+                </div>
+
+
+                <div class="filter-group">
+                    <label for="degerlendirme">Değerlendirme:</label>
+                    <select id="degerlendirme">
+                        <option value="hepsi">Hepsi</option>
+                        <option value="4yildiz">4 Yıldız ve Üzeri</option>
+                        <option value="3yildiz">3 Yıldız ve Üzeri</option>
+                    </select>
+                </div>
+
+
+                <div class="filter-group">
+                    <label>Diyet Seçenekleri:</label>
+                    <label><input type="checkbox" value="vegan"> Vegan</label>
+                    <label><input type="checkbox" value="glutensiz"> Glutensiz</label>
+                </div>
+
+
+                <div class="filter-group">
+                    <button type="button">Filtreleri Uygula</button>
+                </div>
+            </div>
+        </main>
+    </div>
+	
+    <div class="footer">
+        <div class="contact">
+            <div class="footerAddress">Adres:</div>
+            <div class="footerPhone">Telefon:</div>
+            <div class="footerMail">Eposta:</div>
+            <div class="footerMedia">Sosyal Medyalar:</div>
+        </div>
+            <div class="copy">&copy;2024 Yeyemek</div>
+    </div>
+
+    <script src="yemek.js"></script>
+</body>
+</html>

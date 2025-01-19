@@ -1,0 +1,368 @@
+﻿/* Sayfa genel stil ayarları */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+/*bar*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 10em 0;
+}
+
+nav {
+    margin: -90px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background: #006;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    z-index: 1;
+}
+
+/*logo*/
+.yeyemek {
+    background-image: url(logs/baslik/log1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    height: 10em;
+    width: 20em;
+    margin-left: 10em;
+}
+
+/*profil*/
+.profil {
+    background-image: url(logs/baslik/images.png);
+    background-size: cover;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin-right: 10em;
+}
+
+/*ara*/
+.search {
+    display: flex;
+}
+
+.search-bar {
+    background-image: url(logs/baslik/search.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    text-indent: 20px;
+    border: none;
+    border-radius: 9px 0 0 9px;
+    padding: 13px;
+    width: 300px;
+    outline: none;
+    display: flex;
+    flex-wrap: nowrap;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ara {
+    background-color: #fe5001;
+    color: #fff;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 0 9px 9px 0;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-left: -5px;
+}
+
+/*sepet*/
+.buy {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fe5001;
+    border-radius: 9px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 9px;
+}
+
+.cart {
+    background-image: url(logs/baslik/sepo.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.cart-text {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 25px;
+}
+
+.cart-money {
+    font-size: 14px;
+    color: #fff;
+}
+
+/*sipariş takip*/
+.tracking {
+    background-image: url(logs/baslik/box.png);
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    background-size: 26px;
+    cursor: pointer;
+    padding: 17px;
+    padding-right: 50px;
+    color: #fff;
+    background-color: #fe5001;
+    border-radius: 9px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*konum bul*/
+.location {
+    background-image: url(logs/baslik/location.png);
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    font-family: 'Times New Roman';
+    color: #006;
+    padding: 16px 250px 0 40px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin: 0;
+    text-indent: 10%;
+    font-size: 1.8em;
+    padding-right: 1.5em;
+    border-bottom: 2px solid #000066;
+    color: #006;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 8em;
+}
+
+/* Menü */
+.menu-container {
+    display: flex;
+    margin: 50px 0 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 0 2em;
+}
+
+    .menu img {
+        width: 10.7%;
+        height: auto;
+        cursor: pointer;
+        border-radius: 9px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+        .menu img:hover {
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+
+/* Kampanya */
+.campaigns {
+    display: flex;
+    justify-content: space-between; 
+    margin: 2em 2em 0;
+}
+
+    .campaigns img {
+        cursor: pointer;
+        width: 30%;
+        height: auto;
+        border-radius: 9px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+/*restoranlar*/
+.restaurant {
+    margin: 0 8em;
+}
+main {
+    margin: 15px 2em 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-container {
+    display: flex;
+    margin: 50px 0 20px;
+}
+
+.restaurant-grid {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Üç sütunlu düzen */
+    gap: 1.7em;
+    margin: 0 1em;
+}
+
+.restaurant-box {
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .restaurant-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .restaurant-box img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .restaurant-box h2 {
+        text-indent: 15px;
+        margin: 5px 0;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    .restaurant-box .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        font-size: 1em;
+        color: #666;
+    }
+
+    .restaurant-box .rating {
+        color: limegreen;
+        font-weight: bold;
+    }
+
+
+/*filtreler*/
+.filter-container {
+    width: 250px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .filter-container h2 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+    .filter-group label {
+        font-size: 1em;
+        color: #666;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .filter-group select, .filter-group input[type="range"], .filter-group input[type="checkbox"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+    }
+
+    .filter-group input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .filter-group input[type="range"] {
+        cursor: pointer;
+    }
+
+    .filter-group .range-value {
+        text-align: right;
+        font-size: 0.9em;
+        color: #333;
+    }
+
+    .filter-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+        .filter-group button:hover {
+            background-color: #555;
+        }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #006;
+    color: white;
+    margin-top: 25px;
+    height: 250px;
+    width: 100%;
+}
+.contact {
+    display: flex;
+    margin: 40px 10em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copy {
+    display: flex;
+    margin: 4em 10em;
+    justify-content: center;
+}
+.footerAddress {
+    background-image: url(logs/footer/location.png);
+    background-size: cover;
+    text-indent: 65px;
+    width: 65px;
+    height: 65px;
+}
+.footerPhone {
+    background-image: url(logs/footer/phone.png);
+    background-size: cover;
+    text-indent: 65px;
+    width: 65px;
+    height: 65px;
+}
+.footerMail {
+    background-image: url(logs/footer/mail.png);
+    background-size: cover;
+    text-indent: 75px;
+    width: 65px;
+    height: 65px;
+}
