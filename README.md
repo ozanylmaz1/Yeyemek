@@ -2,28 +2,28 @@ Yeyemek, kullanıcı dostu arayüzü ve gözü yormayan sade tasarımıyla dikka
 
 - Güvenlik: Site ve uygulamanın güvenlik işlemleri halen devam etmektedir...
 - Mobil Versiyon: Daha geniş kitlelere ulaşmayı hedefler.
-- Sipariş Takibi: Sipariş takibinizi kolaylaştırır.
+- Sipariş Takibi: Sipariş takibinizi kolaylaştırır.<br />
 <i>Daha gelişmiş özellikler eklenebilir: anlık bildirimler, kampanya hatırlatıcıları, favori listesi, sosyal paylaşım paylaşımları.</i>
 
 🌐 Web Sitesi Özellikleri 'Yeyemek.com'
 
-Adres Belirleme: Google Maps entegrasyonuna hazır modal ile teslim adresi seçimi.
-Arama Çubuğu: Restoran ve menü araması.
-Sepet: Anlık sepet toplamı ve öğe görselleştirmesi.
-Mutfaklar: Farklı mutfak kategorileri.
-Restoran Listesi: Filtreleme (kategori, fiyat, puan, diyet)
-Responsive Tasarım: Desktop ve mobil uyumluluk.
-(kod ve görselleri mevcut)
+Adres Belirleme: Google Maps entegrasyonuna hazır modal ile teslim adresi seçimi.<br />
+Arama Çubuğu: Restoran ve menü araması.<br />
+Sepet: Anlık sepet toplamı ve öğe görselleştirmesi.<br />
+Mutfaklar: Farklı mutfak kategorileri.<br />
+Restoran Listesi: Filtreleme (kategori, fiyat, puan, diyet)<br />
+Responsive Tasarım: Desktop ve mobil uyumluluk.<br />
+(kod ve görselleri mevcut)<br />
 
 📱 Mobil Uygulama Özellikleri 'Yeyemek mobil'
 
-Modern UI: Basit ve sade arayüz, hızlı erişim butonları.
-Gerçek Zamanlı Konum: "Mevcut Konumu Kullan" butonuyla tek tıkla adres seçimi.
-Sipariş Takibi: Adım adım sipariş durumu güncellemeleri.
-Favoriler: Restoran ve yemekleri favorilere ekleme.
-Bildirimler: Kampanya ve sipariş bildirimleri.
-(görselleri mevcut)
-<i>"kodlar çalınma ihtimalinden dolayı bulunmuyor"</i>
+Modern UI: Basit ve sade arayüz, hızlı erişim butonları.<br />
+Gerçek Zamanlı Konum: "Mevcut Konumu Kullan" butonuyla tek tıkla adres seçimi.<br />
+Sipariş Takibi: Adım adım sipariş durumu güncellemeleri.<br />
+Favoriler: Restoran ve yemekleri favorilere ekleme.<br />
+Bildirimler: Kampanya ve sipariş bildirimleri.<br />
+(görselleri mevcut)<br />
+<i>"kodlar çalınma ihtimalinden dolayı bulunmuyor"</i><br />
 
 İletişim
 
