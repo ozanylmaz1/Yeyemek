@@ -27,8 +27,8 @@ Bildirimler: Kampanya ve sipariş bildirimleri.
 
 İletişim
 
-Geliştirici: Ozan Yılmaz
-E-posta: **ozany1542@gmail.com**
-linkedin: <a href="https://www.linkedin.com/in/ozan-yilmaz-338b802a8" target="blank">in/ozan-yilmaz-338b802a8</a>
+Geliştirici: Ozan Yılmaz <br />
+E-posta: **ozany1542@gmail.com** <br />
+linkedin: <a href="https://www.linkedin.com/in/ozan-yilmaz-338b802a8" target="blank">in/ozan-yilmaz-338b802a8</a> <br />
 
 © 2024 Yeyemek
