@@ -1,259 +1,300 @@
-﻿/* Sayfa genel stil ayarları */
+/* Sayfa genel stil ayarları */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-/*bar*/
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin: 90px 10em 0;
+    user-select: none;
+}
+h1 {
+    margin: 0;
+    text-indent: 13%;
+    font-size: 28px;
+    padding-right: 1em;
+    border-bottom: 2px solid #00239c;
+    color: #00239c;
+    text-transform: uppercase;
 }
 
+/*navigasyon barı*/
 nav {
-    margin: -90px 0;
+    margin: -15px 0;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background: #006;
-    width: 100%;
-    height: 80px;
     align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background: #00239c;
+    width: 80%;
+    height: 80px;
     z-index: 1;
 }
-
-/*logo*/
-.yeyemek {
-    background-image: url(logs/baslik/log1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    height: 10em;
-    width: 20em;
-    margin-left: 10em;
-}
-
-/*profil*/
-.profil {
-    background-image: url(logs/baslik/images.png);
-    background-size: cover;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 100%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    margin-right: 10em;
+.nav-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 55%;
 }
 
 /*ara*/
 .search {
     display: flex;
+    flex-direction: row;
 }
 
 .search-bar {
-    background-image: url(logs/baslik/search.png);
-    background-position: 10px;
-    background-repeat: no-repeat;
-    background-size: 16px;
-    text-indent: 20px;
+    padding: 0 15px;
     border: none;
-    border-radius: 9px 0 0 9px;
-    padding: 13px;
+    border-radius: 7px 0 0 7px;
+    height: 45px;
     width: 300px;
     outline: none;
-    display: flex;
-    flex-wrap: nowrap;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.ara {
-    background-color: #fe5001;
+.search-button {
+    background-color: #FD8F00;
     color: #fff;
     border: none;
-    padding: 13px 20px;
-    border-radius: 0 9px 9px 0;
+    height: 45px;
+    width: 60px;
     cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    margin-left: -5px;
+    border-radius: 0 7px 7px 0;
 }
 
 /*sepet*/
-.buy {
-    display: inline-flex;
-    align-items: center;
-    background-color: #fe5001;
-    border-radius: 9px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    padding: 9px;
-}
-
 .cart {
-    background-image: url(logs/baslik/sepo.png);
-    background-size: cover;
-    width: 24px;
-    height: 24px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #FD8F00;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    padding: 0 8px;
+
 }
 
 .cart-text {
     font-size: 14px;
     color: #fff;
-    margin-right: 25px;
 }
 
-.cart-money {
-    font-size: 14px;
-    color: #fff;
+/*Ana ekran*/
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 15px;
 }
 
-/*sipariş takip*/
-.tracking {
-    background-image: url(logs/baslik/box.png);
-    background-position: 90% center;
-    background-repeat: no-repeat;
-    background-size: 26px;
-    cursor: pointer;
-    padding: 17px;
-    padding-right: 50px;
-    color: #fff;
-    background-color: #fe5001;
-    border-radius: 9px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+/*başlangıç*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
 }
 
 /*konum bul*/
 .location {
-    background-image: url(logs/baslik/location.png);
-    border: 1px solid #ddd;
-    border-radius: 9px;
-    font-family: 'Times New Roman';
-    color: #006;
-    padding: 16px 250px 0 40px;
-    background-position: 10px center;
-    background-repeat: no-repeat;
-    background-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+    border: 1px solid #00239c;
+    border-radius: 7px;
+    color: #00239c;
+    width: 400px;
+    height: 50px;
     cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-    margin: 0;
-    text-indent: 10%;
-    font-size: 1.8em;
-    padding-right: 1.5em;
-    border-bottom: 2px solid #000066;
-    color: #006;
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.content {
+/*sipariş takip*/
+.tracking {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 100%;
-    margin: 0 8em;
+    padding: 0 10px;
+    width: 130px;
+    height: 50px;
+    color: #fff;
+    background-color: #FD8F00;
+    border-radius: 7px;
 }
-
-/* Menü */
-.menu-container {
+/*kampanya ve enler*/
+.sec {
     display: flex;
-    margin: 50px 0 20px;
-}
-
-.menu {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 1em;
-    margin: 0 2em;
+    margin-bottom: -30px;
 }
-
-    .menu img {
-        width: 10.7%;
-        height: auto;
-        cursor: pointer;
-        border-radius: 9px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-        .menu img:hover {
-            transform: translateY(-5px);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-        }
 
 /* Kampanya */
-.campaigns {
+.Slides {
     display: flex;
-    justify-content: space-between; 
-    margin: 2em 2em 0;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+    .Slides img {
+        vertical-align: middle;
+        border-radius: 7px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
 }
 
-    .campaigns img {
-        cursor: pointer;
-        width: 30%;
-        height: auto;
-        border-radius: 9px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+.prev, .next {
+    cursor: pointer;
+    padding: 9px;
+    color: #00239c;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+    border-radius: 0 7px 7px 0;
+    background-color: white;
+}
+.prev {
+    position: relative;
+    left: 25px;
+    border-radius: 0 25px 25px 0;
+}
+.next {
+    position: relative;
+    right: 25px;
+    border-radius: 25px 0 0 25px;
+}
+.dot {
+    position: relative;
+    top: -40px;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+    .active, .dot:hover {
+        background-color: #FD8F00;
     }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+/*enler*/
+.best {
+    width: 600px;
+    height: 300px;
+    background-color: #FD8F00;
+    border-radius: 7px;
+}
+/* Menü */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px;
+}
+    .menu button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        height: 200px;
+        color: #333;
+    }
+    .menu button img {
+        width: 100%;
+        padding: 2px 0;
+    }
+
+    .menu button:hover {
+        background-color: #ddd;
+        transform: translateY(-5px);
+    }
+
 
 /*restoranlar*/
 .restaurant {
-    margin: 0 8em;
-}
-main {
-    margin: 15px 2em 15px 0;
+    margin-top: 15px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: self-start;
+    gap: 10px;
 }
-
-.restaurant-container {
-    display: flex;
-    margin: 50px 0 20px;
-}
-
 .restaurant-grid {
-    flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Üç sütunlu düzen */
-    gap: 1.7em;
-    margin: 0 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
 }
 
 .restaurant-box {
-    border: 1px solid #ddd;
-    border-radius: 9px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 245px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
     cursor: pointer;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
     .restaurant-box:hover {
         transform: translateY(-5px);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     }
 
-    .restaurant-box img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-    }
 
-    .restaurant-box h2 {
-        text-indent: 15px;
-        margin: 5px 0;
-        font-size: 1.5em;
-        color: #333;
-    }
+.restaurant-box img {
+    margin: 0;
+    object-fit: contain;
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    display: flex;
+}
 
-    .restaurant-box .info {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 15px;
-        font-size: 1em;
-        color: #666;
-    }
+
+
+.restaurant-box-head {
+    display: flex;
+    position: relative;
+    top: -5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+
+.restaurant-box .info {
+    display: flex;
+    position: relative;
+    top: -20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    color: #666;
+}
 
     .restaurant-box .rating {
         color: limegreen;
@@ -263,106 +304,99 @@ main {
 
 /*filtreler*/
 .filter-container {
-    width: 250px;
-    padding: 25px;
-    background-color: #fff;
-    border-radius: 9px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px 15px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
 }
 
     .filter-container h2 {
         font-size: 1.5em;
-        color: #333;
-        margin-bottom: 20px;
+        color: #00239c;
     }
 
-.filter-group {
-    margin-bottom: 20px;
+.filter-group{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+    .filter-group h5 {
+        color: #FD8F00;
+    }
+    .filter-group label{
+        color: #555;
+        font-size: 14px;
+    }
+    .filter-group select {
+        height: 25px;
+        border: 2px solid #FD8F00;
+        border-radius: 4px;
+        outline: none;
+    }
+    .filter-group select option {
+        font-weight: 550;
+    }
+    .filter-group button{
+        background-color: #00239c;
+        color: white;
+        font-size: 14px;
+        padding: 8px 0;
+        border: 0;
+        border-radius: 4px;
+        margin: 15px 0;
+        cursor: pointer;
+    }
+
+    .filter-group button:hover {
+            background-color: #006;
+        
+    }
+
+footer {
+    margin-top: 15px;
+    background-color: #00239c;
+    padding: 0 10%;
+    width: 80%;
 }
 
-    .filter-group label {
-        font-size: 1em;
-        color: #666;
-        display: block;
-        margin-bottom: 8px;
-    }
-
-    .filter-group select, .filter-group input[type="range"], .filter-group input[type="checkbox"] {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-    }
-
-    .filter-group input[type="checkbox"] {
-        width: auto;
-        margin-right: 10px;
-    }
-
-    .filter-group input[type="range"] {
-        cursor: pointer;
-    }
-
-    .filter-group .range-value {
-        text-align: right;
-        font-size: 0.9em;
-        color: #333;
-    }
-
-    .filter-group button {
-        width: 100%;
-        padding: 10px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1em;
-    }
-
-        .filter-group button:hover {
-            background-color: #555;
-        }
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #006;
-    color: white;
-    margin-top: 25px;
-    height: 250px;
+.footerContainer {
     width: 100%;
+    padding-top: 30px;
 }
-.contact {
+
+.socialIcons {
     display: flex;
-    margin: 40px 10em;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.copy {
-    display: flex;
-    margin: 4em 10em;
     justify-content: center;
 }
-.footerAddress {
-    background-image: url(logs/footer/location.png);
-    background-size: cover;
-    text-indent: 65px;
-    width: 65px;
-    height: 65px;
+
+    .socialIcons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+        .socialIcons a svg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .socialIcons a:hover {
+            transition: 0.4s;
+            transform: translateY(-3px);
+            box-shadow: white 0 4px 8px;
+        }
+
+.footerBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
-.footerPhone {
-    background-image: url(logs/footer/phone.png);
-    background-size: cover;
-    text-indent: 65px;
-    width: 65px;
-    height: 65px;
-}
-.footerMail {
-    background-image: url(logs/footer/mail.png);
-    background-size: cover;
-    text-indent: 75px;
-    width: 65px;
-    height: 65px;
-}
+
+    .footerBottom p {
+        color: white;
+    }
