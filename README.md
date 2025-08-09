@@ -34,11 +34,9 @@ linkedin: <a href="https://www.linkedin.com/in/ozan-yilmaz-338b802a8" target="bl
 © 2024 Yeyemek
 
 Web
-<img width="1920" height="2056" alt="Yeyemek (1)" src="https://github.com/user-attachments/assets/f1842b62-e12a-4666-93d0-de86a8d8015c" />
-<img width="1920" height="877" alt="Yeyemek (2)" src="https://github.com/user-attachments/assets/73666915-f62a-445a-974e-68a09f6300d9" />
-<img width="1920" height="877" alt="Yeyemek (3)" src="https://github.com/user-attachments/assets/5e7c5391-22ce-44fe-b9aa-c70ab7cb7b91" />
-<img width="1920" height="877" alt="Yeyemek (4)" src="https://github.com/user-attachments/assets/a2d8dc40-ceaa-43ef-b32b-00ddde96aeb1" />
-<img width="1920" height="877" alt="Yeyemek (5)" src="https://github.com/user-attachments/assets/295bf3e4-5131-41f0-9c37-24a4de3ea62c" />
+<img width="1920" height="2233" alt="01" src="https://github.com/user-attachments/assets/0883ce69-3c81-4ad8-a097-e0638e1c8780" />
+<img width="1920" height="877" alt="02" src="https://github.com/user-attachments/assets/03466144-98aa-40d1-9568-74e3abb38805" />
+
 <img width="1920" height="1756" alt="Yeyemek-user (1)" src="https://github.com/user-attachments/assets/9ccf73e6-2515-42b2-add5-34a59a32549a" />
 <img width="1920" height="877" alt="Yeyemek-user (2)" src="https://github.com/user-attachments/assets/96ca5bf6-1996-4964-ab5d-e30e04b8f5f9" />
 <img width="1920" height="877" alt="Yeyemek-user (3)" src="https://github.com/user-attachments/assets/76cd66cc-8cb1-4433-ba58-ad888ac5f6ae" />
