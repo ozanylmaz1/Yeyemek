@@ -1,7 +1,7 @@
-<strong>Yeyemek</strong>
+<strong>Yeyemek</strong><br />
 <br />
 <img width="1200" height="628" alt="reklam" src="https://github.com/user-attachments/assets/b96f27d5-2572-4ec2-beb3-a51cbfd4702b" />
-<br /><br />
+<br />
 Yeyemek, kullanıcı dostu arayüzü ve gözü yormayan sade tasarımıyla dikkat çeker. Alışılmış yemek sipariş uygulamalarına benzer bir düzen kullanılarak, kullanıcıların alıştıkları deneyimi sunar ve bu sayede daha rahat kullanım imkânı sağlar. Kullanımı dışında öne çıkan özelliği kampanyalar ve mağaza dostu olmasıdır. Önemli özellikleri; 
 
 - Güvenlik: Kullanıcı deneyimine ve Güvenliğe önem vermekteyiz ve güvenli alışveriş ortamı için her gün daha yenilikçi teknolojilerle çalışmaktayız. 
