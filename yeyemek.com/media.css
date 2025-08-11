@@ -1,113 +1,526 @@
-﻿@media (min-width: 1900px) { /*4k*/
+@media (min-width: 2100px) { /*4k*/
     nav {
-        height: 90px;
-        margin: -100px 0;
-    }
-    .header{
-        margin: 100px 10em 0;
-    }
-    .yeyemek {
-        height: 13em;
-        width: 26em;
-    }
-    .profil {
-        height: 4.1em;
-        width: 4.1em;
-    }
-    .search-bar {
-        width: 350px;
-        padding: 18px;
-    }
-    .ara {
-        padding: 18px 22px;
-    }
-    .buy {
-        padding: 12px;
-    }
-    .filter-container {
-        width: 350px;
-    }
-    .restaurant-grid {
-        grid-template-columns: repeat(4, 1fr); /* Üç sütunlu düzen */
-    }
-    .restaurant-box img {
-        height: 280px;
-    }
-}
-@media (min-width: 1500px ) and (max-width: 1900px) { /*L leptop-4k*/ 
-    .filter-container {
-        width: 300px;
+        padding: 0 10%;
+        height: 120px;
     }
 
-    .restaurant-box img {
-        height: 230px;
-    }
-}
+        nav img {
+            width: 400px;
+        }
 
-@media (min-width: 480px ) and (max-width: 1200px) { /*leptop-tablet*/
-    .header {
-        margin: 90px 2em 0;
+    .nav-end {
+        width: 45%;
     }
 
-    .yeyemek {
-        margin-left: 2em;
-    }
+        .nav-end svg {
+            width: 30px;
+            height: 30px;
+        }
 
-    .profil {
-        margin-right: 2em;
-    }
+        .nav-end a svg {
+            width: 75px;
+            height: 75px;
+        }
 
     .search-bar {
-        width: 220px;
+        height: 60px;
+        width: 400px;
+        font-size: 20px;
     }
 
-    .ara {
-        padding: 13px 15px;
+    .search-button {
+        height: 60px;
+        width: 80px;
     }
 
-    .content {
-        margin: 0;
+    .cart {
+        width: 200px;
+        height: 60px;
     }
 
-    .restaurant {
-        margin: 0;
+    .cart-text {
+        font-size: 20px;
     }
 
     main {
-        margin: 15px 2em 15px 1em;
+        gap: 20px;
     }
 
-    .contact {
-        margin: 40px 2em;
+    .header {
+        padding-top: 50px;
     }
 
-    .copy {
-        margin: 4em 2em;
+    .location {
+        width: 600px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+        .location svg {
+            width: 35px;
+            height: 35px;
+        }
+
+    .tracking {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+        .tracking svg {
+            width: 35px;
+            height: 35px;
+        }
+
+    .sec {
+        margin: 0;
+        gap: 20px;
+    }
+
+    .Slides {
+        width: 1000px;
+        height: 500px;
+    }
+
+        .Slides img {
+            width: 1000px;
+            height: 500px;
+            object-fit: contain;
+        }
+
+    .best {
+        width: 1000px;
+        height: 500px;
+        font-size: 20px;
+    }
+
+        .best svg {
+            width: 35px;
+            height: 35px;
+        }
+
+    .menu button {
+        border: 2px solid #ccc;
+        font-size: 18px;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 300px;
+    }
+
+    .restaurant-box {
+        font-size: 20px;
+        height: 300px;
+    }
+
+    .filter-container h2 {
+        font-size: 2em;
+    }
+
+    .filter-group h5 {
+        font-size: 24px;
+    }
+
+    .filter-group label {
+        font-size: 20px;
+    }
+
+    .filter-group select {
+        font-size: 20px;
+        height: 45px;
+    }
+
+    .filter-group button {
+        font-size: 20px;
+        padding: 10px 0;
     }
 }
-@media (max-width: 880px ) {
+    @media(min-width: 1600px) and (max-width: 2100px) {
+        /*L leptop-4k*/
+        nav {
+            padding: 0 5%;
+            width: 90%;
+            height: 120px;
+        }
+
+            nav img {
+                width: 400px;
+            }
+
+        .nav-end {
+            width: 55%;
+        }
+
+            .nav-end svg {
+                width: 30px;
+                height: 30px;
+            }
+
+            .nav-end a svg {
+                width: 75px;
+                height: 75px;
+            }
+
+        .search-bar {
+            height: 60px;
+            width: 400px;
+            font-size: 20px;
+        }
+
+        .search-button {
+            height: 60px;
+            width: 80px;
+        }
+
+        .cart {
+            width: 200px;
+            height: 60px;
+        }
+
+        .cart-text {
+            font-size: 20px;
+        }
+
+        main {
+            padding: 0 5%;
+            width: 90%;
+            gap: 20px;
+        }
+
+        .header {
+            padding-top: 50px;
+        }
+
+        .location {
+            width: 600px;
+            height: 80px;
+            font-size: 20px;
+        }
+
+            .location svg {
+                width: 35px;
+                height: 35px;
+            }
+
+        .tracking {
+            width: 200px;
+            height: 60px;
+            font-size: 20px;
+        }
+
+            .tracking svg {
+                width: 35px;
+                height: 35px;
+            }
+
+        .sec {
+            margin: 0;
+            gap: 20px;
+        }
+
+        .Slides {
+            width: 1000px;
+            height: 500px;
+        }
+
+            .Slides img {
+                width: 1000px;
+                height: 500px;
+                object-fit: contain;
+            }
+
+        .best {
+            width: 1000px;
+            height: 500px;
+            font-size: 20px;
+        }
+
+            .best svg {
+                width: 35px;
+                height: 35px;
+            }
+
+        .menu button {
+            border: 2px solid #ccc;
+            font-size: 18px;
+        }
+
+        .restaurant-grid {
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 260px;
+        }
+
+        .restaurant-box {
+            height: 260px;
+        }
+
+        .filter-container h2 {
+            font-size: 2em;
+        }
+
+        .filter-group h5 {
+            font-size: 24px;
+        }
+
+        .filter-group label {
+            font-size: 20px;
+        }
+
+        .filter-group select {
+            font-size: 20px;
+            height: 45px;
+        }
+
+        .filter-group button {
+            font-size: 20px;
+            padding: 10px 0;
+        }
+
+    }
+
+
+@media (min-width: 950px ) and (max-width: 1300px) { /*leptop-tablet*/
+
+    nav {
+        padding: 0 2%;
+        width: 96%;
+    }
+
+    .nav-end {
+        width: 60%;
+    }
+
+    main {
+        padding: 0 2%;
+        width: 96%;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+    }
+
+    .restaurant-box {
+        height: 200px;
+    }
+}
+@media (min-width: 800px ) and (max-width: 950px) { /*leptop-tablet*/
+
+    nav {
+        padding: 0 2%;
+        width: 96%;
+    }
+
+    .nav-end {
+        width: 60%;
+    }
+
     .cart {
-        margin-right: -1em;
+        width: 15%;
     }
-    .cart-text {
-        font-size: 0;
+
+        .cart p {
+            margin: 0;
+            font-size: 0;
+        }
+
+    main {
+        padding: 0 2%;
+        width: 96%;
     }
-    .yeyemek {
-        height: 8em;
-        width: 16em;
+
+    .sec {
+        margin: 0;
     }
-    .profil {
-        height: 3em;
-        width: 3em;
+
+    .Slides {
+        width: 450px;
+        height: 225px;
+    }
+
+        .Slides img {
+            width: 450px;
+            height: 225px;
+            object-fit: contain;
+        }
+
+    .best {
+        width: 450px;
+        height: 225px;
     }
     .menu {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-    }   
-        .menu img {
-            width: 100%;
-        }
+    }
+
     .restaurant-grid {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 225px;
+    }
+
+    .restaurant-box {
+        height: 225px;
+    }
+    .search-bar {
+        height: 45px;
+        width: 250px;
+    }
+    .filter-container{
+        width: 25%;
+    }
+}
+@media (min-width: 760px ) and (max-width: 800px) { /*leptop-tablet*/
+
+    nav {
+        padding: 0 2%;
+        width: 96%;
+    }
+
+    .nav-end {
+        width: 65%;
+    }
+
+    .cart {
+        width: 15%;
+    }
+
+        .cart p {
+            margin: 0;
+            font-size: 0;
+        }
+
+    main {
+        padding: 0 2%;
+        width: 96%;
+    }
+
+    .sec {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Slides {
+        width: 750px;
+        height: 375px;
+    }
+
+        .Slides img {
+            width: 750px;
+            height: 375px;
+            object-fit: contain;
+        }
+
+    .best {
+        width: 750px;
+        height: 375px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .restaurant-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 355px;
+    }
+
+    .restaurant-box {
+        height: 355px;
+    }
+
+    .search-bar {
+        height: 45px;
+        width: 200px;
+    }
+
+    .filter-container {
+        width: 25%;
+    }
+}
+
+@media (min-width: 450px ) and (max-width: 760px) { /*tablet*/
+
+    nav {
+        padding: 0;
+        width: 100%;
+    }
+    nav a img {
+        width: 200px;
+    }
+    .nav-end {
+        width: 65%;
+    }
+
+    .cart {
+        width: 15%;
+    }
+
+        .cart p {
+            margin: 0;
+            font-size: 0;
+        }
+
+    main {
+        padding: 0 2%;
+        width: 96%;
+    }
+
+    .sec {
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Slides {
+        width: 100%;
+        height: 100%;
+
+    }
+
+        .Slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    .best{
+        margin: 0 5%;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .restaurant {
+        flex-direction: column-reverse;
+    }
+    .restaurant-grid {
+        justify-content: center;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 220px;
+    }
+
+    .restaurant-box {
+        height: 220px;
+    }
+
+    .search-bar {
+        height: 45px;
+        width: 150px;
+    }
+    .search-button {
+        width: 45px;
+    }
+    .filter-container {
+        width: 96%;
+    }
+    .cart{
+        justify-content:center;
+    }
+    .cart svg{
+        width: 0;
+        padding: 0;
+        margin: 0;
     }
 }
