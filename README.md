@@ -1,9 +1,13 @@
-Yeyemek, kullanıcı dostu arayüzü ve gözü yormayan sade tasarımıyla dikkat çeker. Alışılmış yemek sipariş uygulamalarına benzer bir düzen kullanılarak, kullanıcıların alıştıkları deneyimi sunar ve bu sayede daha rahat kullanım imkânı sağlar.
+<strong>Yeyemek</strong>
+<br />
+<img width="1200" height="628" alt="reklam" src="https://github.com/user-attachments/assets/b96f27d5-2572-4ec2-beb3-a51cbfd4702b" />
+<br /><br />
+Yeyemek, kullanıcı dostu arayüzü ve gözü yormayan sade tasarımıyla dikkat çeker. Alışılmış yemek sipariş uygulamalarına benzer bir düzen kullanılarak, kullanıcıların alıştıkları deneyimi sunar ve bu sayede daha rahat kullanım imkânı sağlar. Kullanımı dışında öne çıkan özelliği kampanyalar ve mağaza dostu olmasıdır. Önemli özellikleri; 
 
-- Güvenlik: Site ve uygulamanın güvenlik işlemleri halen devam etmektedir...
-- Mobil Versiyon: Daha geniş kitlelere ulaşmayı hedefler.
-- Sipariş Takibi: Sipariş takibinizi kolaylaştırır.<br /><br />
-<i>Daha gelişmiş özellikler eklenebilir: anlık bildirimler, kampanya hatırlatıcıları, favori listesi, sosyal paylaşım paylaşımları.</i>
+- Güvenlik: Kullanıcı deneyimine ve Güvenliğe önem vermekteyiz ve güvenli alışveriş ortamı için her gün daha yenilikçi teknolojilerle çalışmaktayız. 
+- Mobil Versiyon: Daha geniş kitlelere ulaşmayı, avantajlı ve kolay erişilebilir alışveriş deneyimi sunmayı hedefler.
+- Sipariş Takibi: Siparişinizi konum özelliği ile o an nerde olduğunu takip etmenizi amaçlar.<br /><br />
+<i>Kendimizi güncel tutuyoruz bu sayede daha gelişmiş özellikler eklenmeye devam edilecektir.</i>
 
 🌐 Web Sitesi Özellikleri 'Yeyemek.com'
 
