@@ -1,540 +1,300 @@
-﻿/* Sayfa genel stil ayarları */
+/* Sayfa genel stil ayarları */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    user-select: none;
 }
-/*bar*/
+/*navigasyon barı*/
 nav {
-    margin: -90px 0;
+    padding: 0 10%;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    background: #006;
-    width: 100%;
-    height: 78px;
     align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background: #00239c;
+    width: 80%;
+    height: 80px;
     z-index: 1;
 }
 
-/*logo*/
-.yeyemek {
-    background-image: url(logs/baslik/log1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    height: 4.5rem;
-    width: 20rem;
-    margin: 0 10em;
-}
-
-/*sipariş takip*/
-.tracking {
-    display: inline-flex;
-    align-items: center;
-    background-color: #fe5001;
-    border-radius: 9px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    padding: 9px;
-}
-
-/*profil*/
-.profil {
-    background-image: url(logs/baslik/images.png);
-    background-size: cover;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 1.75rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    margin-right: 10em;
-}
-
-
-/*sipariş takip*/
-.tracking {
-    background-image: url(logs/baslik/box.png);
-    background-position: 90% center;
-    background-repeat: no-repeat;
-    background-size: 26px;
-    cursor: pointer;
-    padding: 13px;
-    padding-right: 50px;
-    color: #fff;
-    background-color: #fe5001;
-    border-radius: 9px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-/*KULLANICI*/
-.user {
-    justify-content: space-evenly;
-    display: flex;
-    margin: 90px 10em 10px;
-}
-
-.user-pp {
-    background-image: url(logs/baslik/images.png);
-    background-size: cover;
-    height: 10em;
-    width: 10em;
-    border-radius: 5em;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    border: 0;
-    cursor: pointer;
-}
-.user-pp:hover {
-    background-image: url(logs/baslik/imagesr.png);
-}
-
-.home {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-}
-    .home #username, #nick {
-        border: 0;
-        outline: none;
-        cursor: default;
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-    .home #userphone , #phones{
-        background-image: url(logs/user/phone.png);
-        background-size: 1rem;
-        background-repeat: no-repeat;
-        padding-left: 1.5rem;
-        color: #fe5001;
-        border: 0;
-        outline: none;
-        cursor: default;
-        font-size: 14px;
-    }
-
-    .home #useremail, #mail {
-        background-image: url(logs/user/mail.png);
-        background-size: 1rem;
-        background-repeat: no-repeat;
-        padding-left: 1.5rem;
-        color: #006;
-        border: 0;
-        outline: none;
-        cursor: default;
-        font-size: 14px;
-    }
-
-/* Genel kutu 1*/
-.membership {
-    align-items: center;
-    margin: 15px 0 10px;
-    padding: 20px;
-    border-radius: 9px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-    .membership h1{
-        font-weight: bold;
-        color: #555;
-        font-size: 18px;
-    }
-.info-area {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-    .info-area label {
-        font-weight: bold;
-        color: #555;
-        font-size: 14px;
-    }
-.infostart {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 10px;
-}
-.infoend {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 10px;
-}
-
-.input-container {
+.nav-end {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-    padding: 15px;
-    background-color: #f1f1f1;
+    flex-direction: row;
+    width: 22%;
 }
 
-    .input-container input {
-        border: none;
-        background-color: transparent;
-        font-size: 16px;
-        color: #333;
-        width: 100%;
+/*sipariş takip*/
+.tracking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 45px;
+    padding: 0 8px;
+    color: #fff;
+    background-color: #FD8F00;
+    border-radius: 7px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 70px 10% 0;
+}
+/*KULLANICI*/
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+    .settings div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 
-    .input-container a {
-        color: #fe5001;
-        text-decoration: none;
-        font-size: 14px;
-        margin-left: 10px;
+        .settings div #mail {
+            color: #00239c;
+            font-size: 14px;
+        }
+
+        .settings div #phones {
+            color: #FD8F00;
+            font-size: 14px;
+        }
+
+#name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+    section button {
+        background-color: #fff;
+        border: 3px solid #fff;
+        font-size: 18px;
+        font-weight: bold;
+        color: #555;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+        section button div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section button:active {
+            border: 3px solid #00239c;
+            border-radius: 6px;
+        }
+
+.view {
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+#addresses, #orders, #cards, #settings {
+    display: none;
+    background: #f1f1f1;
+    border-radius: 7px;
+    height: 98%;
+    margin: 15px;
+}
+
+.address, .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+    flex-wrap: wrap-reverse;
+    padding: 15px 5%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .head h4 {
+        color: #333;
+    }
+
+    .head button {
+        padding: 9px 35px;
+        border-radius: 4px;
+        background-color: #FD8F00;
+        border: none;
+        display: flex;
         cursor: pointer;
     }
 
-        .input-container a:hover {
-            text-decoration: underline;
+        .head button p {
+            font-weight: bold;
+            color: white;
+            margin: 0;
         }
 
-
-.confirmed {
-    margin-top: 5px;
-    color: #4e69b8;
-    font-weight: bold;
-}
-
-.confirm-icon {
-    margin-right: 5px;
-}
-
-.delete-account-btn {
-    margin-top: 5px;
-    padding: 10px 20px;
-    background-color: #fe5001;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-    .delete-account-btn:hover {
-        background-color: #FF0000;
-    }
-
-.verification {
-    margin-top: 5px;
-    color: #4e69b8;
-    font-weight: bold;
-}
-
-.verify-icon {
-    margin-right: 5px;
-}
-
-/*ADRES VE KARTLAR*/
-.main {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 10px 10em;
-    gap: 15px;
-}
-/* Genel kutu 2*/
-.delivery-section {
-    display: flex;
+#new-address-card, #newcards-add {
+    display: none;
     flex-direction: column;
-    border-radius: 9px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 500px;
-    margin: 20px auto;
+    gap: 7px;
+    border-radius: 7px;
 }
 
-.delivery-address {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-    .delivery-address p {
-        font-weight: bold;
-        color: #555;
-        font-size: 18px;
-    }
-
-.edit-icon {
-    cursor: pointer;
-    font-size: 20px;
-    color: #555;
-    transition: color 0.3s;
-}
-
-    .edit-icon:hover {
-        color: #007BFF;
-    }
-
-.address-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 9px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-}
-
-    .address-card input {
+    #new-address-card input, #newcards-add input {
         background-color: white;
         border: 1px solid #ddd;
         border-radius: 5px;
         padding: 10px;
-        color: #333;
         font-size: 14px;
         width: 100%;
         box-sizing: border-box;
         transition: border-color 0.3s;
     }
 
-        .address-card input[readonly] {
-            background-color: #f9f9f9;
-            color: #999;
-        }
-
-        .address-card input:focus {
-            border-color: #006;
-            outline: none;
-        }
-
-/* Genel kutu 3*/
-.but3 {
-    width: 600px;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 9px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#orders {
+    justify-content: center;
+    align-items: self-start;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 0;
+    gap: 15px;
 }
 
-.new-card {
+.order-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 400px;
+    height: 90px;
     align-items: center;
-    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 2px solid #00239c;
 }
 
-    .new-card p {
-        font-weight: bold;
-        color: #555;
-    }
-
-
-.yeni-card-btn {
-    margin-left: 2rem;
-    background-color: #fe5001;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.card-container {
-    background-color: #f1f1f1;
-    color: #000;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.card-icon-1 {
-    background-image: url(logs/user/mastercard.png);
-    width: 1.9rem;
-    height: 1.9rem;
-    background-size: cover;
-    margin-right: 5px;
-}
-
-.card-icon-2 {
-    background-image: url(logs/user/visa.png);
-    width: 2rem;
-    height: 2rem;
-    background-size: cover;
-    margin-right: 5px;
-}
-
-.card-details {
-    flex-grow: 1;
-    text-align: left;
-}
-
-#expiry-date {
-    margin-left: 20px;
-}
-
-#card-form-container {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-#card-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-#card-form input {
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#card-form button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #fe5001;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-    #card-form button:hover {
-        background-color: #e04801;
-    }
-
-
-/* Genel kutu 4*/
-.but4 {
-    width: auto;
-    margin: 20px 10em;
-    padding: 20px;
-    background-color: white;
-    border-radius: 9px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.Food-Order-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-    .Food-Order-container p {
-        font-weight: bold;
-        color: #555;
-    }
-
-.siparis-card {
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
-    margin-bottom: 20px;
-    align-items: center;
-    background-color: #f1f1f1;
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
-}
-@media (max-width: 1250px) {
-    .siparis-card {
-        width: 42%;
-    }
-}
-
-.siparis-left {
-    display: flex;
-    align-items: center;
-}
-
-.firma-logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.siparis-detay h5 {
+.order-detail h5 {
     margin: 0;
     font-size: 16px;
     color: #333;
 }
 
-.siparis-detay p {
+.order-detail p {
     margin: 3px 0;
     color: #666;
 }
 
-.siparis-detay strong {
-    color: #000;
-}
-
-.siparis-durum {
-    color: #28a745;
+.order-status {
     font-weight: bold;
 }
 
-.durum-icon {
-    margin-right: 5px;
+#save, #reset, #cardssave, #cardsreset {
+    display: none;
 }
 
-.siparis-right {
-    display: flex;
-    align-items: center;
-}
-
-.detay-btn {
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    color: #f9a825;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-    .detay-btn:hover {
-        background-color: #f1f1f1;
-    }
-
-.footer {
+.accountsettings {
     display: flex;
     flex-direction: column;
-    background-color: #006;
-    color: white;
-    margin-top: 25px;
-    height: 250px;
+    gap: 25px;
+    padding: 15px;
+}
+    .accountsettings label {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .accountsettings input {
+        border: 1px solid #00239c;
+        width: 250px;
+        height: 25px;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .accountsettings button {
+        background-color: #00239c;
+        color: white;
+        border: 0;
+        border-radius: 3px;
+        width: 120px;
+        height: 30px;
+    }
+    .accountsettings button:active {
+        background-color: #FD8F00;
+    }
+footer {
+    margin-top: 40px;
+    background-color: #00239c;
+    padding: 0 10%;
+    width: 80%;
+}
+
+.footerContainer {
     width: 100%;
+    padding-top: 30px;
 }
 
-.footerAddress {
-    background-image: url(logs/footer/location.png);
-    background-size: cover;
-    text-indent: 65px;
-    width: 65px;
-    height: 65px;
+.socialIcons {
+    display: flex;
+    justify-content: center;
 }
 
-.footerPhone {
-    background-image: url(logs/footer/phone.png);
-    background-size: cover;
-    text-indent: 65px;
-    width: 65px;
-    height: 65px;
+    .socialIcons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+        .socialIcons a svg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .socialIcons a:hover {
+            transition: 0.4s;
+            transform: translateY(-3px);
+            box-shadow: white 0 4px 8px;
+        }
+
+
+.footerBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
 
-.footerMail {
-    background-image: url(logs/footer/mail.png);
-    background-size: cover;
-    text-indent: 75px;
-    width: 65px;
-    height: 65px;
-}
+    .footerBottom p {
+        color: white;
+    }
