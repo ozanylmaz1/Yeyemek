@@ -10,22 +10,12 @@ Yeyemek, kullanıcı dostu arayüzü ve gözü yormayan sade tasarımıyla dikka
 <i>Kendimizi güncel tutuyoruz bu sayede daha gelişmiş özellikler eklenmeye devam edilecektir.</i>
 
 🌐 Web Sitesi Özellikleri 'Yeyemek.com'
-
-Adres Belirleme: Google Maps entegrasyonuna hazır modal ile teslim adresi seçimi.<br />
-Arama Çubuğu: Restoran ve menü araması.<br />
-Sepet: Anlık sepet toplamı ve öğe görselleştirmesi.<br />
-Mutfaklar: Farklı mutfak kategorileri.<br />
-Restoran Listesi: Filtreleme (kategori, fiyat, puan, diyet)<br />
 Responsive Tasarım: Desktop ve mobil uyumluluk.<br />
 (kod ve görselleri mevcut)<br />
 
 📱 Mobil Uygulama Özellikleri 'Yeyemek mobil'
-
 Modern UI: Basit ve sade arayüz, hızlı erişim butonları.<br />
-Gerçek Zamanlı Konum: "Mevcut Konumu Kullan" butonuyla tek tıkla adres seçimi.<br />
-Sipariş Takibi: Adım adım sipariş durumu güncellemeleri.<br />
-Favoriler: Restoran ve yemekleri favorilere ekleme.<br />
-Bildirimler: Kampanya ve sipariş bildirimleri.<br />
+Bildirimler: Kampanya ve sipariş durumunu anında bildirme.<br />
 (görselleri mevcut)<br />
 <i>"kodlar çalınma ihtimalinden dolayı burada bulunmamaktadır"</i><br />
 
@@ -41,7 +31,6 @@ Web
 <br />
 <img width="1920" height="2233" alt="01" src="https://github.com/user-attachments/assets/0883ce69-3c81-4ad8-a097-e0638e1c8780" />
 <img width="1920" height="877" alt="02" src="https://github.com/user-attachments/assets/03466144-98aa-40d1-9568-74e3abb38805" />
-
 <img width="1920" height="1167" alt="11" src="https://github.com/user-attachments/assets/6e97ac71-617a-4035-8ab7-cb4dff7e16fd" />
 <img width="1920" height="877" alt="12" src="https://github.com/user-attachments/assets/e5e18538-7265-41fd-8e87-ad6ccc63d15b" />
 <img width="1920" height="877" alt="13" src="https://github.com/user-attachments/assets/8e73cba9-1d34-4a77-b8b1-6154980b2070" />
