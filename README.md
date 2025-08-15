@@ -38,3 +38,7 @@ Web
 <img width="1920" height="877" alt="15" src="https://github.com/user-attachments/assets/1729ea3b-ad57-4a4a-8ec7-1e3d29a7e30f" />
 <img width="1920" height="877" alt="21" src="https://github.com/user-attachments/assets/ac4347db-8dbe-46ab-8f54-b590fc7d4671" />
 <img width="1920" height="877" alt="22" src="https://github.com/user-attachments/assets/2db27fac-dc65-41bc-961a-ec92d0df3538" />
+
+Mobil
+<br />
+<img width="2000" height="1800" alt="Adsız tasarım" src="https://github.com/user-attachments/assets/bc97c02a-b7cd-43ca-aaff-351dd84a663a" />
