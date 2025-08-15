@@ -36,4 +36,5 @@ Web
 <img width="1920" height="877" alt="13" src="https://github.com/user-attachments/assets/8e73cba9-1d34-4a77-b8b1-6154980b2070" />
 <img width="1920" height="877" alt="14" src="https://github.com/user-attachments/assets/63ff36f3-cec3-45a3-8bf4-35956e7599f4" />
 <img width="1920" height="877" alt="15" src="https://github.com/user-attachments/assets/1729ea3b-ad57-4a4a-8ec7-1e3d29a7e30f" />
-
+<img width="1920" height="877" alt="21" src="https://github.com/user-attachments/assets/ac4347db-8dbe-46ab-8f54-b590fc7d4671" />
+<img width="1920" height="877" alt="22" src="https://github.com/user-attachments/assets/2db27fac-dc65-41bc-961a-ec92d0df3538" />
