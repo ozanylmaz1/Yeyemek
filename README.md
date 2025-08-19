@@ -17,7 +17,6 @@ Responsive Tasarım: Desktop ve mobil uyumluluk.<br />
 Modern UI: Basit ve sade arayüz, hızlı erişim butonları.<br />
 Bildirimler: Kampanya ve sipariş durumunu anında bildirme.<br />
 (görselleri mevcut)<br />
-<i>"kodlar çalınma ihtimalinden dolayı burada bulunmamaktadır"</i><br />
 
 İletişim
 
