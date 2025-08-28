@@ -1,4 +1,4 @@
-<strong>Yeyemek</strong><br />
+# Yeyemek
 <br />
 <img width="1200" height="628" alt="reklam" src="https://github.com/user-attachments/assets/b96f27d5-2572-4ec2-beb3-a51cbfd4702b" />
 <br />
