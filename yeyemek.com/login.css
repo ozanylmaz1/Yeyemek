@@ -1,0 +1,83 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    user-select: none;
+    min-height: 100vh;
+    padding: 0;
+    background: #FD8F00 url('./assets/y.png') no-repeat center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    background-color: #00239c;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    position: relative;
+    bottom: 100px;
+    border-radius: 7px;
+}
+    form h1 {
+        margin-top: 0;
+        color: white;
+    }
+    form h4 {
+        color: white;
+        margin: 0;
+    }
+    form input {
+        margin: 4px 0;
+        width: 220px;
+        height: 25px;
+        padding: 0 5px;
+        border: 0;
+        border-radius: 2px;
+        outline: none;
+    }
+    form a {
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+    }
+.document {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+    .document input {
+        margin: 0;
+        margin-left: -140px;
+        height: 15px;
+    }
+    
+    .document p {
+        margin: 0;
+        position: relative;
+        right: 95px;
+        color: white;
+        font-size: 14px;
+    }
+    .buttons p {
+        font-size: 10px;
+        color: white;
+    }
+button {
+    padding: 10px 30px;
+    border-radius: 2px;
+    background-color: #FD8F00;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+button:active {
+    background-color: #b56600;
+}
