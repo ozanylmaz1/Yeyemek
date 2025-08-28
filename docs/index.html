@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="location.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" href="icon.png" />
+    <title>Yeyemek</title>
+</head>
+<body>
+    <nav>
+        <a id="yeyemek" href="./index.html">
+            <img src="assets/logo.png" width="250" /> <!--logo-->
+        </a>
+
+        <div class="nav-end">
+            <div class="search">
+                <input type="search" placeholder="Ara..." class="search-bar">
+                <button class="search-button ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z" />
+                </svg>
+                <p class="cart-text"> Sepetim</p>
+                <div id="cart-money" class="cart-text">0,0TL</div>
+            </div>
+            <a id="Person" href="login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="header">
+            <a class="location" id="openModalBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                </svg>
+                <strong>Teslim adresi</strong>
+            </a>
+
+            <div id="locationModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModalBtn" class="close">&times;</span>
+                    <div class="container">
+                        <input type="text" placeholder="Mahalle, Sokak, Cadde Ara" class="search-input">
+                        <div class="warning">
+                            <p>Haritadaki <strong>No Bilgisi</strong> Google tarafından sağlanmaktadır. <span class="error">Hatalı gösteriliyorsa</span>, sonraki adımda düzenleyebilirsiniz.</p>
+                        </div>
+                        <div class="map-container">
+                            <div class="map">
+                                <!-- Burada Google Maps API kullanılarak harita eklenecektir -->
+                                <div class="map-message">
+                                    <p>Adresi belirlemek için pini sürükleyin ya da sağ alttaki "Mevcut Konumu Kullan" butonuna tıklayın.</p>
+                                    <span class="close-btn">&times;</span>
+                                </div>
+                                <button class="current-location-btn">Mevcut Konumu Kullan</button>
+                            </div>
+                        </div>
+                        <button class="add-location-btn">İşaretlediğim Konumu Ekle</button>
+                    </div>
+                </div>
+            </div>
+
+            <a class="tracking" id="tracking">
+                Sipariş takip
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-crosshair" viewBox="0 0 16 16">
+                    <path d="M8.5.5a.5.5 0 0 0-1 0v.518A7 7 0 0 0 1.018 7.5H.5a.5.5 0 0 0 0 1h.518A7 7 0 0 0 7.5 14.982v.518a.5.5 0 0 0 1 0v-.518A7 7 0 0 0 14.982 8.5h.518a.5.5 0 0 0 0-1h-.518A7 7 0 0 0 8.5 1.018zm-6.48 7A6 6 0 0 1 7.5 2.02v.48a.5.5 0 0 0 1 0v-.48a6 6 0 0 1 5.48 5.48h-.48a.5.5 0 0 0 0 1h.48a6 6 0 0 1-5.48 5.48v-.48a.5.5 0 0 0-1 0v.48A6 6 0 0 1 2.02 8.5h.48a.5.5 0 0 0 0-1zM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="sec">
+            <div class="Slides">
+                <div class="slideshow-container">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+
+                    <div class="mySlides fade">
+                        <img id="s-1" src="assets/campaign/demo1.png" alt="Campaign 1">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="s-2" src="assets/campaign/demo2.png" alt="Campaign 2">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="s-3" src="assets/campaign/demo3.png" alt="Campaign 3">
+                    </div>
+
+
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+
+                <div style="text-align: center; user-select: none;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="best">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+                <h3>Yakında Hizmetinizde</h3>
+            </div>
+        </div>
+
+        <div>
+            <div style="display: flex; "><h1 style="text-indent: 16%;">Mutfaklar</h1></div>
+
+            <div class="menu">
+                <button>
+                    <img id="doner" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1064.png?height=192" />
+                    <h4>Döner</h4>
+                </button>
+                <button>
+                    <img id="pizza" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1082.png?height=192" />
+                    <h4>Pizza</h4>
+                </button>
+                <button>
+                    <img id="burger" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1058.png?height=192" />
+                    <h4>Burger</h4>
+                </button>
+                <button>
+                    <img id="cigkofte" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1061.png?height=192" />
+                    <h4>Çiğköfte</h4>
+                </button>
+                <button>
+                    <img id="salata" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1076.png?height=192" />
+                    <h4>Salata</h4>
+                </button>
+                <button>
+                    <img id="kebap" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1071.png?height=192" />
+                    <h4>Kebap ve Türk Mutfağı</h4>
+                </button>
+                <button>
+                    <img id="lahmacun-pide" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1080.png?height=192" />
+                    <h4>Lahmacun ve Pide</h4>
+                </button>
+                <button>
+                    <img id="ev" src="https://images.deliveryhero.io/image/foodpanda/cuisine-images/TR/1067.png?height=192" />
+                    <h4>Ev yemekleri</h4>
+                </button>
+            </div>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <div style="display:flex;"><h1>Restoranlar</h1></div>
+            <div class="restaurant">
+                <div class="restaurant-grid">
+                    <div class="restaurant-box">
+                        <img src="assets/store/store (1).png" alt="">
+                        <div class="restaurant-box-head">
+                            <h3>Restoran 1</h3>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FD8F00" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <p>00-10 dk | Min. 10,00 TL</p>
+                            <span class="rating">★5,0</span>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-box">
+                        <img src="assets/store/store (2).png" alt="">
+                        <div class="restaurant-box-head">
+                            <h3>Restoran 2</h3>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FD8F00" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <p>00-10 dk | Min. 10,00 TL</p>
+                            <span class="rating">★5,0</span>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-box">
+                        <img src="assets/store/store (3).png" alt="">
+                        <div class="restaurant-box-head">
+                            <h3>Restoran 3</h3>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FD8F00" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <p>00-10 dk | Min. 10,00 TL</p>
+                            <span class="rating">★5,0</span>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-box special-box">
+                        <img src="assets/store/store (4).png" alt="">
+                        <div class="restaurant-box-head">
+                            <h3>Restoran 4</h3>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FD8F00" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <p>00-10 dk | Min. 10,00 TL</p>
+                            <span class="rating">★5,0</span>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-box">
+                        <img src="assets/store/store (5).png" alt="">
+                        <div class="restaurant-box-head">
+                            <h3>Restoran 5</h3>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FD8F00" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <p>00-10 dk | Min. 10,00 TL</p>
+                            <span class="rating">★5,0</span>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-box">
+                        <img src="assets/store/store (6).png" alt="">
+                        <div class="restaurant-box-head">
+                            <h3>Restoran 6</h3>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FD8F00" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <p>00-10 dk | Min. 10,00 TL</p>
+                            <span class="rating">★5,0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-container">
+                    <h2>Filtreler</h2>
+                    <div class="filter-group">
+                        <h5>Sıralama :</h5>
+                        <label for="Recommended">
+                            <input type="radio" id="Recommended" name="sort" value="Recommended" checked />
+                            Önerilen
+                        </label>
+
+                        <label for="Rating">
+                            <input type="radio" id="Rating" name="sort" value="Rating" />
+                            En Yüksek Puanlılar
+                        </label>
+
+                        <label for="Time">
+                            <input type="radio" id="Time" name="sort" value="Time" />
+                            Teslimat Süresi
+                        </label>
+
+                        <label for="comment">
+                            <input type="radio" id="comment" name="sort" value="comment" />
+                            En Çok Yorum Alanlar
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h5>Değerlendirme :</h5>
+                        <select id="evaluation">
+                            <option value="hepsi">Hepsi</option>
+                            <option value="dortbuc" style="color:limegreen ">★4,5 ve Üzeri</option>
+                            <option value="dort" style="color:lawngreen">★4,0 ve Üzeri</option>
+                            <option value="ucbuc" style="color:orange">★3,5 ve Üzeri</option>
+                            <option value="uc" style="color:orangered">★3,0 ve Üzeri</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h5>Kategoriler :</h5>
+                        <label for="hepsi">
+                            <input type="checkbox" id="hepsi" name="category" value="hepsi" checked />
+                            Hepsi
+                        </label>
+
+                        <label for="doner">
+                            <input type="checkbox" id="doner" name="category" value="doner" />
+                            Döner
+                        </label>
+
+                        <label for="pizza">
+                            <input type="checkbox" id="pizza" name="category" value="pizza" />
+                            Pizza
+                        </label>
+
+                        <label for="cigkofte">
+                            <input type="checkbox" id="cigkofte" name="category" value="cigkofte" />
+                            Çiğköfte
+                        </label>
+
+                        <label for="salata">
+                            <input type="checkbox" id="salata" name="category" value="salata" />
+                            Salata
+                        </label>
+
+                        <label for="kebap">
+                            <input type="checkbox" id="kebap" name="category" value="kebap" />
+                            Kebap ve Türk Mutfağı
+                        </label>
+
+                        <label for="lahmacun-pide">
+                            <input type="checkbox" id="lahmacun-pide" name="category" value="lahmacun-pide" />
+                            Lahmacun ve Pide
+                        </label>
+
+                        <label for="ev">
+                            <input type="checkbox" id="ev" name="category" value="ev" />
+                            Ev Yemekleri
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h5>Min. Sepet :</h5>
+                        <input type="range" min="0" max="500" value="250" class="slider" id="minAmount">
+                        <label for="range-value">₺250</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <button type="submit">Filtreleri Uygula</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#00239c" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#00239c" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>                
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#00239c" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#00239c" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+        <div class="footerBottom">
+            <img src="assets/logo.png" width="150" />
+            <p>&copy;2024 </p>
+        </div>
+    </footer>
+
+    <script src="yemek.js"></script>
+    <script src="Slides.js"></script>
+</body>
+</html>

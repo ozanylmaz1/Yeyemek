@@ -1,0 +1,300 @@
+﻿/* Sayfa genel stil ayarları */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+/*navigasyon barı*/
+nav {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background: #00239c;
+    width: 80%;
+    height: 80px;
+    z-index: 1;
+}
+
+.nav-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 22%;
+}
+
+/*sipariş takip*/
+.tracking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 45px;
+    padding: 0 8px;
+    color: #fff;
+    background-color: #FD8F00;
+    border-radius: 7px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 70px 10% 0;
+}
+/*KULLANICI*/
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+    .settings div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .settings div #mail {
+            color: #00239c;
+            font-size: 14px;
+        }
+
+        .settings div #phones {
+            color: #FD8F00;
+            font-size: 14px;
+        }
+
+#name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+    section button {
+        background-color: #fff;
+        border: 3px solid #fff;
+        font-size: 18px;
+        font-weight: bold;
+        color: #555;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: -10px;
+    }
+
+        section button div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section button:active {
+            border: 3px solid #00239c;
+            border-radius: 6px;
+        }
+
+.view {
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+#addresses, #orders, #cards, #settings {
+    display: none;
+    background: #f1f1f1;
+    border-radius: 7px;
+    height: 98%;
+    margin: 15px;
+}
+
+.address, .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+    flex-wrap: wrap-reverse;
+    padding: 15px 5%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .head h4 {
+        color: #333;
+    }
+
+    .head button {
+        padding: 9px 35px;
+        border-radius: 4px;
+        background-color: #FD8F00;
+        border: none;
+        display: flex;
+        cursor: pointer;
+    }
+
+        .head button p {
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
+#new-address-card, #newcards-add {
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 7px;
+}
+
+    #new-address-card input, #newcards-add input {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+
+#orders {
+    justify-content: center;
+    align-items: self-start;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 0;
+    gap: 15px;
+}
+
+.order-card {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 90px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 2px solid #00239c;
+}
+
+.order-detail h5 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.order-detail p {
+    margin: 3px 0;
+    color: #666;
+}
+
+.order-status {
+    font-weight: bold;
+}
+
+#save, #reset, #cardssave, #cardsreset {
+    display: none;
+}
+
+.accountsettings {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+}
+    .accountsettings label {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .accountsettings input {
+        border: 1px solid #00239c;
+        width: 250px;
+        height: 25px;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .accountsettings button {
+        background-color: #00239c;
+        color: white;
+        border: 0;
+        border-radius: 3px;
+        width: 120px;
+        height: 30px;
+    }
+    .accountsettings button:active {
+        background-color: #FD8F00;
+    }
+footer {
+    margin-top: 40px;
+    background-color: #00239c;
+    padding: 0 10%;
+    width: 80%;
+}
+
+.footerContainer {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+    .socialIcons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+        .socialIcons a svg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .socialIcons a:hover {
+            transition: 0.4s;
+            transform: translateY(-3px);
+            box-shadow: white 0 4px 8px;
+        }
+
+
+.footerBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+    .footerBottom p {
+        color: white;
+    }
