@@ -1,4 +1,4 @@
-﻿/* Sayfa genel stil ayarları */
+/* Sayfa genel stil ayarları */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -253,7 +253,8 @@ main {
     gap: 10px;
 }
 
-.restaurant-box {
+/* restoran kutuları */
+a.restaurant-box {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -261,23 +262,24 @@ main {
     border: 1px solid #bbb;
     border-radius: 7px;
     cursor: pointer;
+    text-decoration: none; /* link alt çizgi olmasın */
+    color: inherit; /* yazılar renk bozulmasın */
 }
 
-    .restaurant-box:hover {
+    a.restaurant-box:hover {
         transform: translateY(-5px);
     }
 
+    /* resim */
+    a.restaurant-box img {
+        margin: 0;
+        object-fit: contain;
+        border-radius: 6px 6px 0 0;
+        width: 100%;
+        display: flex;
+    }
 
-.restaurant-box img {
-    margin: 0;
-    object-fit: contain;
-    border-radius: 6px 6px 0 0;
-    width: 100%;
-    display: flex;
-}
-
-
-
+/* başlık ve kalp butonu */
 .restaurant-box-head {
     display: flex;
     position: relative;
@@ -288,7 +290,22 @@ main {
     margin: 0 10px;
 }
 
+/* kalp butonu */
+.heart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+    .heart-btn svg {
+        pointer-events: none; /* svg'ye değil butona tıklansın */
+    }
+
+/* restoran info */
 .restaurant-box .info {
     display: flex;
     position: relative;
@@ -300,10 +317,10 @@ main {
     color: #666;
 }
 
-    .restaurant-box .rating {
-        color: limegreen;
-        font-weight: bold;
-    }
+.restaurant-box .rating {
+    color: limegreen;
+    font-weight: bold;
+}
 
 
 /*filtreler*/
@@ -404,4 +421,86 @@ footer {
 
     .footerBottom p {
         color: white;
+    }
+
+
+    /*mağza*/
+
+.storeimg {
+    width: 350px;
+    border-radius: 3px;
+}
+.storeInfo{
+    display:flex;
+    gap: 15px;
+}
+.storeInfo p, .storeInfo h2 {
+    margin: 0;
+    color: #333;
+}
+#storeName{
+    font-size: 35px;
+    color: black;
+}
+#rating {
+    color: limegreen;
+    font-weight: bold;
+    font-size: 40px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+#rating h3{
+    margin: 0 0 35px;
+}
+.restaurantMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: self-start;
+}
+#restaurantMenuCategory{
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 300px;
+}
+    #restaurantMenuCategory label {
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        padding: 5px 15px 5px 0;
+        cursor:pointer;
+    }
+    .menuView{
+        display:flex;
+        gap: 15px;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        flex-direction: row;
+    }
+.menuViewSec {
+    display: flex;
+    border: 1px solid #aaa;
+    padding: 5px;
+    border-radius: 4px;
+    width: 425px;
+    justify-content: space-between;
+}
+
+.menuViewSec img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.menuViewSec p{
+    margin: 0;
+    color: #333;
+}
+
+    .menuViewSec svg{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
     }
