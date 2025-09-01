@@ -195,16 +195,47 @@ main {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-/*enler*/
+/*Haftalık Sıralma*/
 .best {
     width: 600px;
     height: 300px;
-    background-color: #FD8F00;
-    border-radius: 7px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2vw;
+}
+    .best div {
+        width: 33%;
+        background: linear-gradient(#fd4a00,#FD8F00);
+        border-radius: 7px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+.bestImg {
+    width: 94%;
+    margin: 3%;
+    border-radius: 5px;
+}
+        .best div p {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 3%;
+            color: white;
+        }
+.best div a {
+    background: white;
+    width: 94%;
+    margin: 3%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    color: #FD8F00;
+    text-decoration: none;
+    text-indent: 100%;
+    font-weight: bold;
     gap: 15px;
+    border-radius: 5px;
 }
 /* Menü */
 .menu {
@@ -504,3 +535,4 @@ footer {
         height: 30px;
         cursor: pointer;
     }
+
