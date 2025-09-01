@@ -1,6 +1,6 @@
 # Yeyemek
 Canlı Demo: <a href="https://ozanylmaz1.github.io/Yeyemek/">Başlat</a><br /><br />
-<img width="1200" height="628" alt="reklam" src="https://github.com/user-attachments/assets/b96f27d5-2572-4ec2-beb3-a51cbfd4702b" />
+<img width="1200" height="628" alt="reklam" src="https://github.com/user-attachments/assets/7a7b19d8-5462-4b61-9e95-f45be27c9f6b" />
 <br />
 Yeyemek, kullanıcı dostu arayüzü ve gözü yormayan sade tasarımıyla dikkat çeker. Alışılmış yemek sipariş uygulamalarına benzer bir düzen kullanılarak, kullanıcıların alıştıkları deneyimi sunar ve bu sayede daha rahat kullanım imkânı sağlar. Kullanımı dışında öne çıkan özelliği kampanyalar ve mağaza dostu olmasıdır. Önemli özellikleri; 
 
@@ -28,7 +28,7 @@ linkedin: <a href="https://www.linkedin.com/in/ozan-yilmaz-338b802a8" target="bl
 
 Web
 <br />
-<img width="1920" height="2233" alt="01" src="https://github.com/user-attachments/assets/0883ce69-3c81-4ad8-a097-e0638e1c8780" />
+<img width="1920" height="2241" alt="image" src="https://github.com/user-attachments/assets/ea4c7bd8-926d-4f1c-99dd-76ab006340f4" />
 <img width="1920" height="877" alt="02" src="https://github.com/user-attachments/assets/03466144-98aa-40d1-9568-74e3abb38805" />
 <img width="1920" height="1167" alt="11" src="https://github.com/user-attachments/assets/6e97ac71-617a-4035-8ab7-cb4dff7e16fd" />
 <img width="1920" height="877" alt="12" src="https://github.com/user-attachments/assets/e5e18538-7265-41fd-8e87-ad6ccc63d15b" />
