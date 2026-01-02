@@ -18,7 +18,7 @@ Modern UI: Basit ve sade arayüz, hızlı erişim butonları.<br />
 Bildirimler: Kampanya ve sipariş durumunu anında bildirme.<br />
 (görselleri mevcut)<br />
 
-📦 Teknolojiler
+📦 Teknolojiler<br /><br />
 • HTML5<br />
 • CSS3<br />
 • Javascript<br />
