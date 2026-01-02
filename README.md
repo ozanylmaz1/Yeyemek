@@ -19,12 +19,12 @@ Bildirimler: Kampanya ve sipariş durumunu anında bildirme.<br />
 (görselleri mevcut)<br />
 
 📦 Teknolojiler
-• HTML5
-• CSS3
-• Javascript
-• PHP
-• React Native
-• Expo
+• HTML5<br />
+• CSS3<br />
+• Javascript<br />
+• PHP<br />
+• React Native<br />
+• Expo<br />
 
 İletişim
 
