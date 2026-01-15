@@ -290,6 +290,7 @@ a.restaurant-box {
     cursor: pointer;
     text-decoration: none; 
     color: inherit; 
+    display: table;
 }
 
     a.restaurant-box:hover {
@@ -527,6 +528,7 @@ footer {
         height: 30px;
         cursor: pointer;
     }
+
 
 
 
