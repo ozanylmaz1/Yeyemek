@@ -308,9 +308,6 @@ a.restaurant-box {
 /* başlık ve kalp butonu */
 .restaurant-box-head {
     display: flex;
-    position: relative;
-    top: -5px;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 0 10px;
@@ -330,6 +327,9 @@ a.restaurant-box {
     .heart-btn svg {
         pointer-events: none; /* svg'ye değil butona tıklansın */
     }
+.restaurant-box-head h3{
+    margin: 0;
+}
 
 /* restoran info */
 .restaurant-box .info {
@@ -527,6 +527,7 @@ footer {
         height: 30px;
         cursor: pointer;
     }
+
 
 
 
