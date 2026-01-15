@@ -285,15 +285,11 @@ main {
 
 /* restoran kutuları */
 a.restaurant-box {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    height: 245px;
     border: 1px solid #bbb;
     border-radius: 7px;
     cursor: pointer;
-    text-decoration: none; /* link alt çizgi olmasın */
-    color: inherit; /* yazılar renk bozulmasın */
+    text-decoration: none; 
+    color: inherit; 
 }
 
     a.restaurant-box:hover {
@@ -534,5 +530,6 @@ footer {
         height: 30px;
         cursor: pointer;
     }
+
 
 
