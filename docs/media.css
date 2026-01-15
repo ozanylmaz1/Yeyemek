@@ -163,9 +163,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .restaurant-box {
-        height: 200px;
-    }
 }
 @media (min-width: 800px ) and (max-width: 950px) { /*leptop-tablet*/
 
@@ -387,4 +384,5 @@
     }
 
 }
+
 
