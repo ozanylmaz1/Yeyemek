@@ -334,9 +334,6 @@ a.restaurant-box {
 /* restoran info */
 .restaurant-box .info {
     display: flex;
-    position: relative;
-    top: -20px;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 0 10px;
@@ -530,6 +527,7 @@ footer {
         height: 30px;
         cursor: pointer;
     }
+
 
 
 
