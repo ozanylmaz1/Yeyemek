@@ -111,11 +111,6 @@
 
         .restaurant-grid {
             grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: 260px;
-        }
-
-        .restaurant-box {
-            height: 260px;
         }
 
         .filter-container h2 {
@@ -215,12 +210,8 @@
 
     .restaurant-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 225px;
     }
 
-    .restaurant-box {
-        height: 225px;
-    }
     .search-bar {
         height: 45px;
         width: 250px;
@@ -283,11 +274,6 @@
 
     .restaurant-grid {
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 355px;
-    }
-
-    .restaurant-box {
-        height: 355px;
     }
 
     .search-bar {
@@ -357,11 +343,6 @@
         justify-content: center;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 220px;
-    }
-
-    .restaurant-box {
-        height: 220px;
     }
 
     .search-bar {
@@ -384,5 +365,6 @@
     }
 
 }
+
 
 
