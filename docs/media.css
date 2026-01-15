@@ -161,7 +161,6 @@
 
     .restaurant-grid {
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 200px;
     }
 
     .restaurant-box {
@@ -388,3 +387,4 @@
     }
 
 }
+
